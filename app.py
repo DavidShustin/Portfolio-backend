@@ -25,10 +25,9 @@ app.url_map.strict_slashes = False
 CORS(app, resources={
     "/api/*": {
         "origins": [
-           "https://portfolio-page-david-shustins-projects.vercel.app",
-           "https://portfolio-backend-production-6121.up.railway.app",git status
-           "https://literate-winner-69vq6499557qfrr9j-3000.app.github.dev"
-       ]
+            "https://portfolio-page-david-shustins-projects.vercel.app",
+            "https://portfolio-backend-production-6121.up.railway.app"
+        ]
     }
 })
 
