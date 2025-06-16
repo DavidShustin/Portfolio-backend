@@ -27,7 +27,7 @@ CORS(app, resources={
         "origins": [
             "http://localhost:3000",
             "https://portfolio-page-david-shustins-projects.vercel.app",
-            "https://portfolio-backend-production-2b46.up.railway.app"
+            "https://web-8xmr.onrender.com"
         ]
     }
 })
