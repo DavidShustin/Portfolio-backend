@@ -22,13 +22,19 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
+from flask_cors import CORS
+
 CORS(app, resources={
     r"/api/*": {
         "origins": [
             "http://localhost:3000",
             "https://portfolio-page-david-shustins-projects.vercel.app",
+            "https://portfolio-page-weld-two.vercel.app",
             "https://web-8xmr.onrender.com"
-        ]
+        ],
+        "methods": ["GET","POST","OPTIONS"],
+        "allow_headers": ["Content-Type"],
+        "max_age": 86400    # cache preflight for 24 hours
     }
 })
 
